@@ -1,8 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation
 
-## Available Scripts
-
-In the project directory, you can run:
+npm install
 
 ### `npm start`
 
@@ -12,57 +10,22 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `npm test`
+## `Description`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The Intersection Observer API is a Web platform API that allows for observing changes to how much of a target element’s area intersects with that of an ancestor element or the viewport. The need for such information has a lot of use cases, such as implementing lazy-loading and infinite scrolling etc.
 
-### `npm run build`
+The Intersection Observer API is used to observe when one element, called the target, intersects either the device viewport or a specified element called root.You can also pass the root as null.if the element isn't a descendant of a scrollable element, the viewport. To watch for intersection relative to the root element, specify null
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Think of the browser's viewport and the target element as their own boxes. The target element is below the viewport. The element is somewhere lower part of the page. When the element overlaps with the viewport that time the image load.It will improve the React application performance. We are not going to load all the images at once because if user not going to see the products in our page.So its not required and it will create performance issue.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Target Element.
+This is the element whose intersection with an ancestor element (or the viewport) we want to observe.
+### Intersection Root
+The ancestor element or the viewport in which we will be measuring the target element's intersection against.
+### Intersection Ratio. 
+How much of the target element intersects with the intersection root. It is expressed as a value between 0 and 1, inclusive, where 0 means the two don't intersect at all and 1 means the target element completely intersects with the intersection root.
+### Root Margin: 
+We need no margin, so the margin offset, rootMargin, is specified as "0px".Its working like the same we are providing margin in CSS. We cam define the rootmargin like "10px 20px 30px 10px"
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
